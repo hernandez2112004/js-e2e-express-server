@@ -3,6 +3,9 @@ azuresupcription: 'NonmbreExactoDelServiceConnection'
 # Node.js
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
+- task: NodeTaskRunnerInstaller@0
+  inputs:
+    nodeVersion: '6'
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
